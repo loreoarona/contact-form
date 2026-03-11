@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #2196f3;
+    --secondary-color: #8D8DFF;
+    --color-1: #8D8DFF;
+    --color-2: #F9F6F3;
+    --color-3: #F6F3F9;
+}
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 2px solid var(--text-color);
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--color-2);
+}
+input, select, textarea {
+    padding: .5em;
+    border: 1px solid var(--text-color);
+    Font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .5em;
+}
+html {
+    font-family: Montserrat, Oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    padding: 1em;
+    background-color: var(--base-color);         
+}
+h1,h2,h3 {
+    font-family: Oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+title, legend {
+    font-family: Oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    margin: 2em auto;
+    width: main(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+.btn.btn-primary,.btn.btn-secondary {
+    display: inline-block;  
+    padding: .75em 1.5em;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    text-decoration: none;
+    border-radius: .5em;
+    font-weight: bold;
+}
+@media(max-width: 988px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+        padding: 1em;
+    }
+}
